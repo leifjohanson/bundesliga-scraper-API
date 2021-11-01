@@ -58,7 +58,7 @@ async function getStat() {
 
 const app = express()
 
-app.get('/player-stats', async(_, res) => {
+app.get('/player-stats', async(req, res) => {
     try {
        const playerStats = await getStat()
 
